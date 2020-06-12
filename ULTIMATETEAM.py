@@ -10,12 +10,12 @@ import unidecode
 import sys
 codex = ""
 v = 0 # variable to count how many http requests were made.
-players = {"…der Milit„o" : 2000, "Morales" : 1100, "Sissoko" : 2300, "Jo„o FÈlix" : 1800, "Ndombele" : 1500,"Mbabu" : 2400, "Zaha" : 1800, "RibÈry" : 2500 }
-sellingprice = {"…der Milit„o" : 2000, "Morales" : 1100, "Sissoko" : 2300, "Jo„o FÈlix" : 1800, "Ndombele" : 1500, "Mbabu" : 2400, "Zaha" : 1800, "RibÈry" : 2500 }
-playernames = ["…der Milit„o","Morales", "Sissoko", "Jo„o FÈlix", "Ndombele","Mbabu", "Zaha", "RibÈry"]
+players = {"√âder Milit√£o" : 2000, "Morales" : 1100, "Sissoko" : 2300, "Jo√£o F√©lix" : 1800, "Ndombele" : 1500,"Mbabu" : 2400, "Zaha" : 1800, "Rib√©ry" : 2500 }
+sellingprice = {"√âder Milit√£o" : 2000, "Morales" : 1100, "Sissoko" : 2300, "Jo√£o F√©lix" : 1800, "Ndombele" : 1500, "Mbabu" : 2400, "Zaha" : 1800, "Rib√©ry" : 2500 }
+playernames = ["√âder Milit√£o","Morales", "Sissoko", "Jo√£o F√©lix", "Ndombele","Mbabu", "Zaha", "Rib√©ry"]
 playerprices = [ 2000, 1100, 2300, 1800,1500,2400,1800,2500]
 is_available = True # variable to check whether or not you should bid on a player.
-name = "NÈlson Semedo"
+name = "N√©lson Semedo"
 
 print(unidecode.unidecode(name))
 
@@ -264,12 +264,12 @@ def getcode():
     driver.find_element_by_xpath("/html/body/header/div/aside/div/nav/ul/li[2]").click()
     # put in email and password
     time.sleep(5)
-    driver.find_element_by_xpath("/html/body/div/form[1]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[2]/div/input[1]").send_keys("brian_quilty@hotmail.com") # password for hotmail
+    driver.find_element_by_xpath("/html/body/div/form[1]/div/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[2]/div/input[1]").send_keys("") # password for hotmail
     time.sleep(2)
     driver.find_element_by_xpath("/html/body/div/form[1]/div/div/div[1]/div[2]/div[2]/div/div/div/div[4]/div/div/div/div/input").click()
     # put in password
     time.sleep(5)
-    driver.find_element_by_xpath("/html/body/div/form[1]/div/div/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div[2]/input").send_keys("") #password for webapp
+    driver.find_element_by_xpath("/html/body/div/form[1]/div/div/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div[2]/input").send_keys("") #password for hotmail
     time.sleep(2)
     driver.find_element_by_xpath("/html/body/div/form[1]/div/div/div[1]/div[2]/div[2]/div/div[2]/div/div[3]/div[2]/div/div/div/div/input").click()
     #click on other tab
